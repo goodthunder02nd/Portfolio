@@ -273,6 +273,139 @@
       50%       { transform: translateY(-10px); }
     }
     .float-anim { animation: float 5s ease-in-out infinite; }
+
+    /* ══ Section shared ══ */
+    .section-light {
+      background: #f8f9ff;
+    }
+    .dark .section-light {
+      background: #0a0a14;
+    }
+    .section-dark {
+      background: #f0f2ff;
+    }
+    .dark .section-dark {
+      background: #06060f;
+    }
+
+    /* ── Section heading gradient ── */
+    .section-title {
+      background: linear-gradient(135deg, #6366f1, #34d399);
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+
+    /* ── Scroll-reveal ── */
+    .reveal {
+      opacity: 0;
+      transform: translateY(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .reveal-left {
+      opacity: 0;
+      transform: translateX(-28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal-left.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+    .reveal-right {
+      opacity: 0;
+      transform: translateX(28px);
+      transition: opacity 0.65s ease, transform 0.65s ease;
+    }
+    .reveal-right.visible {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ── About interest tags ── */
+    .interest-tag {
+      background: linear-gradient(135deg, rgba(99,102,241,0.1), rgba(52,211,153,0.07));
+      border: 1px solid rgba(99,102,241,0.25);
+      transition: all 0.25s ease;
+    }
+    .interest-tag:hover {
+      background: linear-gradient(135deg, rgba(99,102,241,0.2), rgba(52,211,153,0.15));
+      border-color: rgba(99,102,241,0.5);
+      transform: translateY(-2px);
+    }
+
+    /* ── Timeline ── */
+    .timeline-line {
+      position: absolute;
+      left: 50%;
+      top: 0; bottom: 0;
+      width: 2px;
+      background: linear-gradient(to bottom, #6366f1, #34d399);
+      transform: translateX(-50%);
+    }
+    @media (max-width: 767px) {
+      .timeline-line { left: 20px; }
+    }
+    .timeline-dot {
+      width: 14px; height: 14px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, #6366f1, #34d399);
+      box-shadow: 0 0 0 4px rgba(99,102,241,0.2), 0 0 12px rgba(99,102,241,0.5);
+      flex-shrink: 0;
+      transition: box-shadow 0.3s ease;
+    }
+    .timeline-dot.future {
+      background: linear-gradient(135deg, #34d399, #6366f1);
+      box-shadow: 0 0 0 4px rgba(52,211,153,0.2), 0 0 12px rgba(52,211,153,0.5);
+    }
+    .timeline-card {
+      transition: transform 0.25s ease, box-shadow 0.25s ease;
+    }
+    .timeline-card:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ── Learning cards ── */
+    .learning-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .learning-card:hover {
+      transform: translateY(-6px);
+    }
+
+    /* ── Skill bars ── */
+    .skill-bar-fill {
+      height: 100%;
+      border-radius: 999px;
+      background: linear-gradient(90deg, #6366f1, #34d399);
+      width: 0;
+      transition: width 1.2s cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    .skill-bar-fill.animated {
+      /* width set inline via JS */
+    }
+
+    /* ── Skill category card ── */
+    .skill-category {
+      transition: transform 0.25s ease;
+    }
+    .skill-category:hover {
+      transform: translateY(-4px);
+    }
+
+    /* ── Tag chips ── */
+    .skill-chip {
+      background: rgba(99,102,241,0.1);
+      border: 1px solid rgba(99,102,241,0.2);
+      transition: all 0.2s ease;
+    }
+    .skill-chip:hover {
+      background: rgba(99,102,241,0.2);
+      border-color: rgba(99,102,241,0.5);
+    }
   </style>
 </head>
 
