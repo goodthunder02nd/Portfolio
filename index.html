@@ -1483,5 +1483,307 @@
     })();
   </script>
 
+  <!-- ══════════════════════════════════════════
+       CONTACT & FOOTER — CSS
+  ══════════════════════════════════════════ -->
+  <style>
+    /* ── Form fields ── */
+    .form-field {
+      background: rgba(99,102,241,0.04);
+      border: 1px solid rgba(99,102,241,0.18);
+      color: inherit;
+      transition: border-color 0.2s ease, box-shadow 0.2s ease, background 0.2s ease;
+      width: 100%;
+    }
+    .form-field:focus {
+      outline: none;
+      border-color: rgba(99,102,241,0.55);
+      box-shadow: 0 0 0 3px rgba(99,102,241,0.1);
+      background: rgba(99,102,241,0.07);
+    }
+    .form-field::placeholder {
+      color: #9ca3af;
+    }
+
+    /* ── Social quick-link pill ── */
+    .contact-social {
+      transition: transform 0.2s ease, background 0.2s ease, border-color 0.2s ease;
+    }
+    .contact-social:hover {
+      transform: translateY(-3px);
+    }
+
+    /* ── Submit button state ── */
+    #contact-btn {
+      transition: background 0.2s ease, transform 0.15s ease, opacity 0.2s ease;
+    }
+    #contact-btn:hover  { transform: translateY(-2px); }
+    #contact-btn:active { transform: translateY(0); }
+    #contact-btn:disabled { opacity: 0.65; cursor: not-allowed; transform: none; }
+
+    /* ── Footer ── */
+    .footer-social {
+      transition: color 0.2s ease, transform 0.2s ease;
+    }
+    .footer-social:hover {
+      transform: translateY(-3px);
+    }
+    .footer-divider {
+      height: 1px;
+      background: linear-gradient(90deg, transparent, rgba(99,102,241,0.3), transparent);
+    }
+  </style>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT SECTION
+  ══════════════════════════════════════════ -->
+  <section id="contact" class="section-dark py-24 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-5xl mx-auto">
+
+      <!-- Header -->
+      <div class="text-center mb-14 reveal">
+        <span class="inline-block text-xs font-bold uppercase tracking-widest text-primary-500 mb-3">Get in touch</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 dark:text-white mb-4">
+          Contact <span class="section-title">Me</span>
+        </h2>
+        <div class="w-16 h-1 mx-auto rounded-full bg-gradient-to-r from-primary-500 to-accent-500 mb-5"></div>
+        <p class="text-gray-500 dark:text-gray-400 text-sm max-w-sm mx-auto">
+          Have a question or want to collaborate? Send me a message — I'll get back to you.
+        </p>
+      </div>
+
+      <div class="grid lg:grid-cols-5 gap-10 items-start">
+
+        <!-- ── Left: Quick-links ── -->
+        <div class="lg:col-span-2 space-y-4 reveal-left">
+          <h3 class="text-sm font-bold uppercase tracking-widest text-gray-500 dark:text-gray-400 mb-6">Reach me via</h3>
+
+          <!-- GitHub -->
+          <a href="https://github.com/goodthunder02nd" target="_blank" rel="noopener noreferrer"
+             class="contact-social flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-primary-300 dark:hover:border-primary-700 group">
+            <div class="w-11 h-11 rounded-xl bg-gray-900 dark:bg-gray-800 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-200">
+              <i class="fa-brands fa-github text-white"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="font-semibold text-gray-800 dark:text-white text-sm">GitHub</p>
+              <p class="text-xs text-gray-400 truncate">github.com/goodthunder02nd</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 dark:text-gray-700 text-xs ml-auto group-hover:text-primary-400 transition-colors"></i>
+          </a>
+
+          <!-- LinkedIn -->
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+             class="contact-social flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-blue-300 dark:hover:border-blue-700 group">
+            <div class="w-11 h-11 rounded-xl bg-blue-600 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-200">
+              <i class="fa-brands fa-linkedin-in text-white"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="font-semibold text-gray-800 dark:text-white text-sm">LinkedIn</p>
+              <p class="text-xs text-gray-400 truncate">Connect with me</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 dark:text-gray-700 text-xs ml-auto group-hover:text-blue-400 transition-colors"></i>
+          </a>
+
+          <!-- Email -->
+          <a href="mailto:youremail@email.com"
+             class="contact-social flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-accent-400 dark:hover:border-accent-500 group">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-accent-400 to-emerald-600 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-200">
+              <i class="fa-solid fa-envelope text-white"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="font-semibold text-gray-800 dark:text-white text-sm">Email</p>
+              <p class="text-xs text-gray-400 truncate">youremail@email.com</p>
+            </div>
+            <i class="fa-solid fa-arrow-up-right-from-square text-gray-300 dark:text-gray-700 text-xs ml-auto group-hover:text-accent-400 transition-colors"></i>
+          </a>
+
+          <!-- Resume Download -->
+          <a href="#" download
+             class="contact-social flex items-center gap-4 p-4 rounded-2xl bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 hover:border-violet-300 dark:hover:border-violet-700 group">
+            <div class="w-11 h-11 rounded-xl bg-gradient-to-br from-primary-500 to-violet-600 flex items-center justify-center flex-shrink-0 shadow-sm group-hover:scale-110 transition-transform duration-200">
+              <i class="fa-solid fa-file-arrow-down text-white"></i>
+            </div>
+            <div class="min-w-0">
+              <p class="font-semibold text-gray-800 dark:text-white text-sm">Resume</p>
+              <p class="text-xs text-gray-400">Download PDF</p>
+            </div>
+            <i class="fa-solid fa-download text-gray-300 dark:text-gray-700 text-xs ml-auto group-hover:text-primary-400 transition-colors"></i>
+          </a>
+        </div>
+
+        <!-- ── Right: Contact form ── -->
+        <div class="lg:col-span-3 reveal-right">
+          <form id="contact-form" class="bg-white dark:bg-gray-900 border border-gray-100 dark:border-gray-800 rounded-2xl p-7 shadow-sm space-y-5">
+
+            <!-- Name -->
+            <div>
+              <label for="c-name" class="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5 uppercase tracking-wider">Name</label>
+              <input
+                id="c-name"
+                name="name"
+                type="text"
+                placeholder="Your full name"
+                required
+                class="form-field rounded-xl px-4 py-3 text-sm"
+              />
+            </div>
+
+            <!-- Email -->
+            <div>
+              <label for="c-email" class="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5 uppercase tracking-wider">Email</label>
+              <input
+                id="c-email"
+                name="email"
+                type="email"
+                placeholder="your@email.com"
+                required
+                class="form-field rounded-xl px-4 py-3 text-sm"
+              />
+            </div>
+
+            <!-- Message -->
+            <div>
+              <label for="c-message" class="block text-xs font-semibold text-gray-600 dark:text-gray-400 mb-1.5 uppercase tracking-wider">Message</label>
+              <textarea
+                id="c-message"
+                name="message"
+                rows="5"
+                placeholder="Tell me about your project or just say hi…"
+                required
+                class="form-field rounded-xl px-4 py-3 text-sm resize-none"
+              ></textarea>
+            </div>
+
+            <!-- Submit -->
+            <button
+              id="contact-btn"
+              type="submit"
+              class="btn-primary w-full inline-flex items-center justify-center gap-2 px-6 py-3 rounded-xl bg-gradient-to-r from-primary-500 to-primary-600 hover:from-primary-600 hover:to-primary-700 text-white font-semibold text-sm shadow-md glow-primary"
+            >
+              <i class="fa-solid fa-paper-plane"></i>
+              <span id="contact-btn-text">Send Message</span>
+            </button>
+
+            <!-- Status message -->
+            <p id="contact-status" class="text-center text-xs text-gray-400 hidden"></p>
+
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════════════════
+       FOOTER
+  ══════════════════════════════════════════ -->
+  <footer class="bg-gray-950 dark:bg-black text-gray-400 pt-16 pb-8 px-4 sm:px-6 lg:px-8">
+    <div class="max-w-6xl mx-auto">
+
+      <!-- Top row -->
+      <div class="flex flex-col md:flex-row items-center justify-between gap-8 mb-10 reveal">
+
+        <!-- Brand -->
+        <div class="flex flex-col items-center md:items-start gap-3">
+          <div class="flex items-center gap-2.5">
+            <div class="w-9 h-9 rounded-xl bg-gradient-to-br from-primary-500 to-accent-500 flex items-center justify-center text-white font-bold text-sm shadow-md">
+              YN
+            </div>
+            <span class="font-bold text-lg text-white tracking-tight">[YOUR NAME]</span>
+          </div>
+          <p class="text-sm text-gray-500 text-center md:text-left max-w-xs leading-relaxed">
+            Information Technology Student &amp; Aspiring Software Developer
+          </p>
+        </div>
+
+        <!-- Quote -->
+        <blockquote class="text-center md:text-right max-w-xs">
+          <p class="text-sm text-gray-500 italic leading-relaxed">
+            "Learning, building, and improving one project at a time."
+          </p>
+        </blockquote>
+      </div>
+
+      <!-- Divider -->
+      <div class="footer-divider mb-8"></div>
+
+      <!-- Bottom row -->
+      <div class="flex flex-col sm:flex-row items-center justify-between gap-4">
+
+        <!-- Copyright -->
+        <p class="text-xs text-gray-600 order-2 sm:order-1">
+          &copy; <span id="footer-year"></span> <span class="text-gray-500">[YOUR NAME]</span>. All rights reserved.
+        </p>
+
+        <!-- Social icons -->
+        <div class="flex items-center gap-4 order-1 sm:order-2">
+          <a href="https://github.com/goodthunder02nd" target="_blank" rel="noopener noreferrer"
+             class="footer-social text-gray-600 hover:text-white" aria-label="GitHub">
+            <i class="fa-brands fa-github text-lg"></i>
+          </a>
+          <a href="https://linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer"
+             class="footer-social text-gray-600 hover:text-blue-400" aria-label="LinkedIn">
+            <i class="fa-brands fa-linkedin-in text-lg"></i>
+          </a>
+          <a href="https://facebook.com/yourprofile" target="_blank" rel="noopener noreferrer"
+             class="footer-social text-gray-600 hover:text-blue-500" aria-label="Facebook">
+            <i class="fa-brands fa-facebook-f text-lg"></i>
+          </a>
+          <a href="mailto:youremail@email.com"
+             class="footer-social text-gray-600 hover:text-accent-400" aria-label="Email">
+            <i class="fa-solid fa-envelope text-lg"></i>
+          </a>
+        </div>
+      </div>
+
+    </div>
+  </footer>
+
+  <!-- ══════════════════════════════════════════
+       CONTACT & FOOTER — JAVASCRIPT
+  ══════════════════════════════════════════ -->
+  <script>
+    /* ─── Footer: dynamic year ─── */
+    document.getElementById('footer-year').textContent = new Date().getFullYear();
+
+    /* ─── Contact form: mailto handler ─── */
+    document.getElementById('contact-form').addEventListener('submit', function (e) {
+      e.preventDefault();
+
+      const name    = document.getElementById('c-name').value.trim();
+      const email   = document.getElementById('c-email').value.trim();
+      const message = document.getElementById('c-message').value.trim();
+      const btn     = document.getElementById('contact-btn');
+      const btnText = document.getElementById('contact-btn-text');
+      const status  = document.getElementById('contact-status');
+
+      if (!name || !email || !message) return;
+
+      /* Build mailto URI */
+      const subject = encodeURIComponent(`Portfolio Contact from ${name}`);
+      const body    = encodeURIComponent(
+        `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+      );
+      const mailto  = `mailto:youremail@email.com?subject=${subject}&body=${body}`;
+
+      /* Open mailto */
+      window.location.href = mailto;
+
+      /* UI feedback */
+      btn.disabled  = true;
+      btnText.textContent = 'Opening email client…';
+      status.textContent  = 'Your email client should open. Fill in and send from there.';
+      status.classList.remove('hidden');
+      status.classList.add('text-accent-400');
+
+      /* Reset after 4 s */
+      setTimeout(() => {
+        btn.disabled = false;
+        btnText.textContent = 'Send Message';
+        status.classList.add('hidden');
+      }, 4000);
+    });
+  </script>
+
 </body>
 </html>
