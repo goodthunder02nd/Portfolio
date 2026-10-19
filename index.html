@@ -1987,18 +1987,44 @@
       const subject = encodeURIComponent(`Portfolio Message from ${name}`);
       const body    = encodeURIComponent(`Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`);
       const mailto  = `mailto:lawrenceadriancaliwag@gmail.com?subject=${subject}&body=${body}`;
+      const platform = navigator.userAgentData?.platform || navigator.platform;
+      const isWindows = platform.startsWith('Win');
 
-      window.location.href = mailto;
+      if (isWindows) {
+        const gmailComposeUrl = new URL('https://mail.google.com/mail/');
+        gmailComposeUrl.search = new URLSearchParams({
+          view: 'cm',
+          fs: '1',
+          to: 'lawrenceadriancaliwag@gmail.com',
+          su: `Portfolio Message from ${name}`,
+          body: `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`,
+        }).toString();
+
+        window.open(gmailComposeUrl.toString(), '_blank', 'noopener,noreferrer');
+        const fallbackLink = document.createElement('a');
+        fallbackLink.href = gmailComposeUrl.toString();
+        fallbackLink.target = '_blank';
+        fallbackLink.rel = 'noopener noreferrer';
+        fallbackLink.className = 'underline font-bold';
+        fallbackLink.textContent = 'open Gmail compose';
+        status.replaceChildren(
+          document.createTextNode('If a new tab did not open, '),
+          fallbackLink,
+          document.createTextNode('. Review and send your inquiry there.')
+        );
+        btnText.textContent = 'Opening Gmail…';
+      } else {
+        window.location.href = mailto;
+        status.textContent = 'Your default email client should open. Please review and send.';
+        btnText.textContent = 'Opening Email Client…';
+      }
 
       btn.disabled = true;
-      btnText.textContent = 'Opening Email Client…';
-      status.textContent = 'Your default email client should open. Please review and send.';
       status.classList.remove('hidden');
 
       setTimeout(() => {
         btn.disabled = false;
         btnText.textContent = 'Transmit Message';
-        status.classList.add('hidden');
       }, 4000);
     });
   </script>
