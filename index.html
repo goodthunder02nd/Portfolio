@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" class="scroll-smooth dark">
+<html lang="en" class="scroll-smooth">
 <head>
   <!-- ===== Meta & SEO ===== -->
   <meta charset="UTF-8" />
@@ -37,7 +37,7 @@
             comic: ['Space Grotesk', 'Inter', 'sans-serif'],
           },
           colors: {
-            // Manga-inspired monochrome + subtle dark green palette (inspired by avatar jacket)
+            // Manga-inspired monochrome + subtle dark green palette
             manga: {
               paper: '#fcfcfb',
               surface: '#f4f5f6',
@@ -429,16 +429,6 @@
       transform: translateX(0);
     }
 
-    /* ── Skill bar fill ── */
-    .skill-bar-fill {
-      height: 100%;
-      background: #1b4332;
-      width: 0;
-      transition: width 1s cubic-bezier(0.16, 1, 0.3, 1);
-    }
-    .dark .skill-bar-fill {
-      background: linear-gradient(90deg, #1b4332, #4ade80);
-    }
 
     /* ── Timeline ── */
     .timeline-track {
@@ -652,8 +642,7 @@
 
           <!-- Student Narrative Intro -->
           <p class="text-gray-700 dark:text-gray-300 text-base sm:text-lg leading-relaxed mb-8 max-w-xl mx-auto lg:mx-0">
-            Currently pursuing a <span class="font-semibold text-gray-900 dark:text-white">Bachelor of Science in Computer Engineering</span> at
-            <span class="font-semibold text-forest-800 dark:text-forest-400">ICCT Colleges</span>. Passionate about Android development with Kotlin &amp; Java, practical software architecture, and continuous learning from core principles to real projects.
+            Currently pursuing a <span class="font-semibold text-gray-900 dark:text-white">Bachelor of Science in Computer Engineering</span> at <span class="font-semibold text-forest-800 dark:text-forest-400">ICCT Colleges</span>. An undergraduate software development student and Android developer focused on Kotlin, Java, and building open-source projects on GitHub, with hands-on enthusiasm for PC building, hardware troubleshooting, and Windows installation and configuration.
           </p>
 
           <!-- Primary Action Buttons -->
@@ -777,13 +766,13 @@
               Building Fundamentals, One Project at a Time
             </h3>
             <p class="text-gray-700 dark:text-gray-300 text-base leading-relaxed mb-4">
-              I am <span class="font-bold text-forest-800 dark:text-forest-400">Lawrence Adrian Caliwag</span>, currently pursuing a Bachelor of Science degree in Computer Engineering at <span class="font-semibold text-gray-900 dark:text-white">ICCT Colleges</span>.
+              I am <span class="font-bold text-forest-800 dark:text-forest-400">Lawrence Adrian Caliwag</span>, an undergraduate student currently pursuing a Bachelor of Science degree in Computer Engineering at <span class="font-semibold text-gray-900 dark:text-white">ICCT Colleges</span>.
             </p>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-4">
-              My engineering education blends software development, object-oriented concepts, and computer systems fundamentals. I spend my time exploring <span class="font-semibold text-forest-800 dark:text-forest-400">Android development with Kotlin and Java</span>, learning how modern operating systems manage services, layouts, and display hardware.
+              My engineering education blends software development, object-oriented concepts, and computer systems fundamentals. I focus on <span class="font-semibold text-forest-800 dark:text-forest-400">Android development with Kotlin and Java</span>, learning how modern operating systems manage services, layouts, and display hardware.
             </p>
             <p class="text-gray-700 dark:text-gray-300 leading-relaxed mb-6">
-              Rather than claiming extensive industry experience, I approach software engineering with an Progressive mindset: disciplined version control habits, eager curiosity, and a focus on shipping reliable utility apps like my screen power optimizer, <em>DarkScreen</em>.
+              As an undergraduate software development student, I approach engineering with an authentic, growth-oriented mindset: disciplined version control habits, eager curiosity, and a focus on shipping practical utilities like my screen power optimizer, <em>DarkScreen</em>. Beyond code, I am an enthusiastic PC builder with hands-on experience in hardware troubleshooting and Windows system configuration.
             </p>
 
             <!-- Focus Tags -->
@@ -793,16 +782,19 @@
               </p>
               <div class="flex flex-wrap gap-2">
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
-                  <i class="fa-brands fa-android"></i> Android Native
+                  <i class="fa-brands fa-android"></i> Android Dev
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
                   <i class="fa-solid fa-code"></i> Java &amp; Kotlin
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
-                  <i class="fa-solid fa-network-wired"></i> Networking
+                  <i class="fa-solid fa-desktop"></i> PC Building
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
-                  <i class="fa-solid fa-microchip"></i> Hardware & System Architecture
+                  <i class="fa-brands fa-windows"></i> Windows Config
+                </span>
+                <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
+                  <i class="fa-solid fa-microchip"></i> Hardware &amp; System Architecture
                 </span>
               </div>
             </div>
@@ -832,11 +824,11 @@
 
           <div class="comic-panel p-5 text-center">
             <div class="w-12 h-12 border-2 border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center mx-auto mb-3 shadow-[2px_2px_0px_#000]">
-              <i class="fa-solid fa-network-wired text-xl"></i>
+              <i class="fa-solid fa-desktop text-xl"></i>
             </div>
-            <h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase">Networking</h4>
-            <p class="text-xs font-mono text-forest-700 dark:text-forest-400 mt-1">Protocols &amp; REST</p>
-            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2">TCP/IP foundations, routing, and HTTP diagnostics</p>
+            <h4 class="font-bold text-gray-900 dark:text-white text-sm uppercase">PC &amp; Systems</h4>
+            <p class="text-xs font-mono text-forest-700 dark:text-forest-400 mt-1">Hardware &amp; Windows</p>
+            <p class="text-xs text-gray-600 dark:text-gray-400 mt-2">PC building, hardware troubleshooting, and Windows installation</p>
           </div>
 
           <div class="comic-panel p-5 text-center">
@@ -950,13 +942,13 @@
           <div class="flex-1 reveal-right">
             <div class="comic-panel p-5 inline-block text-left border-2 border-forest-800 dark:border-forest-400">
               <span class="inline-block text-[11px] font-mono font-bold uppercase tracking-wider text-forest-700 dark:text-forest-400 mb-1">
-                Year 4 · Current In Progress Focus · In Progress
+                Year 4 · Currently Pursuing Degree · ICCT Colleges
               </span>
               <h3 class="font-comic font-bold text-gray-900 dark:text-white text-base sm:text-lg">
-                Practical System Projects &amp; Software Utilities
+                Practical System Projects &amp; GitHub Development
               </h3>
               <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 leading-relaxed">
-                Building utility apps such as <span class="font-bold text-forest-800 dark:text-forest-400">DarkScreen</span> (Android screen overlay for power reduction), investigating network communication, and synthesizing computer engineering theory into functional tools.
+                Actively pursuing final-year undergraduate engineering coursework at ICCT Colleges while building utility apps such as <span class="font-bold text-forest-800 dark:text-forest-400">DarkScreen</span> (Android screen overlay for power reduction), expanding open-source repositories on GitHub, and synthesizing theoretical principles into functional software.
               </p>
             </div>
           </div>
@@ -967,13 +959,13 @@
           <div class="flex-1 md:text-right reveal-left">
             <div class="comic-panel p-5 inline-block text-left md:text-right bg-forest-50 dark:bg-forest-950/30">
               <span class="inline-block text-[11px] font-mono font-bold uppercase tracking-wider text-forest-800 dark:text-forest-400 mb-1">
-                Target Objective // Continuous Growth
+                Target Objective // Continuous Improvement
               </span>
               <h3 class="font-comic font-bold text-gray-900 dark:text-white text-base sm:text-lg">
                 Engineering Internship &amp; Junior Developer Roles
               </h3>
               <p class="text-gray-600 dark:text-gray-400 text-sm mt-1 leading-relaxed">
-                Eager to bring disciplined curiosity, solid programming foundations, and coachability to a collaborative engineering team as an intern or entry-level developer.
+                Focused on continuous improvement, academic growth, and practical project building. Eager to bring disciplined curiosity, solid programming foundations, and coachability to a collaborative engineering team as an intern or entry-level developer.
               </p>
             </div>
           </div>
@@ -1080,274 +1072,296 @@
       </div>
 
       <!-- Categories Grid -->
-      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
 
-        <!-- 1. Languages (Includes Java and Kotlin) -->
+        <!-- 1. Mobile Development -->
         <div class="comic-panel p-6 flex flex-col justify-between reveal">
-          <div>
-            <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
-              <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
-                <i class="fa-solid fa-terminal text-sm"></i>
-              </div>
-              <div>
-                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Core Languages</h3>
-                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Programming</span>
-              </div>
-            </div>
-
-            <div class="space-y-4">
-              <!-- Kotlin -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Kotlin</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Primary</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="80"></div>
-                </div>
-              </div>
-
-              <!-- Java -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Java</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Academic Core</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="75"></div>
-                </div>
-              </div>
-
-              <!-- JavaScript -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">JavaScript / HTML</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Frontend</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="70"></div>
-                </div>
-              </div>
-
-              <!-- C / C++ (Coursework) -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">C / Systems Logic</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Foundations</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="65"></div>
-                </div>
-              </div>
-            </div>
-          </div>
-
-          <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Kotlin</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Java</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">OOP</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">C</span>
-          </div>
-        </div>
-
-        <!-- 2. Mobile Development -->
-        <div class="comic-panel p-6 flex flex-col justify-between reveal" style="transition-delay: 0.1s;">
           <div>
             <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
               <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
                 <i class="fa-solid fa-mobile-screen-button text-sm"></i>
               </div>
               <div>
-                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Mobile Dev</h3>
+                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Mobile Development</h3>
                 <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Android Native</span>
               </div>
             </div>
 
-            <div class="space-y-4">
-              <!-- Android Studio -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Android Studio</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Primary IDE</span>
+            <!-- Skills List with Project Associations -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-android text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Android Development</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="78"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  DarkScreen Project
+                </span>
               </div>
 
-              <!-- Android SDK -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Android SDK &amp; APIs</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Core</span>
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-laptop-code text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Android Studio</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="72"></div>
-                </div>
-              </div>
-
-              <!-- System Overlays & Services -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">System Overlays / Services</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Applied</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="75"></div>
-                </div>
-              </div>
-
-              <!-- XML Layouts -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Layout Design &amp; UI</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Responsive</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="70"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Primary Mobile IDE
+                </span>
               </div>
             </div>
           </div>
 
+          <!-- Bottom Badges / Tags -->
           <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">DarkScreen</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Android SDK</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">System Overlays</span>
             <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Gradle</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Overlays</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Activities</span>
           </div>
         </div>
 
-        <!-- 3. Tools & Workflow -->
+        <!-- 2. Programming Languages -->
+        <div class="comic-panel p-6 flex flex-col justify-between reveal" style="transition-delay: 0.1s;">
+          <div>
+            <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
+              <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
+                <i class="fa-solid fa-terminal text-sm"></i>
+              </div>
+              <div>
+                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Programming Languages</h3>
+                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Core &amp; Application</span>
+              </div>
+            </div>
+
+            <!-- Skills List with Project Associations -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-java text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Java</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Coursework &amp; OOP
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-code text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Kotlin</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  DarkScreen App
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-js text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">JavaScript</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Portfolio &amp; Web
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Badges / Tags -->
+          <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Kotlin</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Java</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">JavaScript</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">OOP</span>
+          </div>
+        </div>
+
+        <!-- 3. Frontend -->
         <div class="comic-panel p-6 flex flex-col justify-between reveal" style="transition-delay: 0.2s;">
+          <div>
+            <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
+              <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
+                <i class="fa-solid fa-layer-group text-sm"></i>
+              </div>
+              <div>
+                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Frontend</h3>
+                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Web &amp; Interfaces</span>
+              </div>
+            </div>
+
+            <!-- Skills List with Project Associations -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-html5 text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">HTML</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Semantic Structure
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-css3-alt text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">CSS</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Responsive Design
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-react text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">React</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Component UI
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-wind text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Tailwind CSS</span>
+                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Portfolio Theme
+                </span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Bottom Badges / Tags -->
+          <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">HTML5</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">CSS3</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">React</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Tailwind CSS</span>
+          </div>
+        </div>
+
+        <!-- 4. Tools & Platforms -->
+        <div class="comic-panel p-6 flex flex-col justify-between reveal" style="transition-delay: 0.1s;">
           <div>
             <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
               <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
                 <i class="fa-solid fa-screwdriver-wrench text-sm"></i>
               </div>
               <div>
-                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Tools &amp; Workflow</h3>
-                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Development</span>
+                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Tools &amp; Platforms</h3>
+                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Development Workflow</span>
               </div>
             </div>
 
-            <div class="space-y-4">
-              <!-- Git -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Git (CLI &amp; Branching)</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Standard</span>
+            <!-- Skills List with Project Associations -->
+            <div class="space-y-2.5">
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-git-alt text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Git</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="78"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  CLI &amp; Branching
+                </span>
               </div>
 
-              <!-- GitHub -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">GitHub (Repos &amp; Sync)</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Active</span>
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-github text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">GitHub</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="76"></div>
-                </div>
-              </div>
-
-              <!-- VS Code -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">VS Code</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Daily</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="85"></div>
-                </div>
-              </div>
-
-              <!-- Terminal & Debugging -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Terminal &amp; Diagnostics</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Fundamental</span>
-                </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="70"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Repos &amp; Deployment
+                </span>
               </div>
             </div>
           </div>
 
+          <!-- Bottom Badges / Tags -->
           <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
             <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Git</span>
             <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">GitHub</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">VS Code</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Version Control</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Open Source</span>
           </div>
         </div>
 
-        <!-- 4. Networking & Systems (BSCOE) -->
-        <div class="comic-panel p-6 flex flex-col justify-between reveal" style="transition-delay: 0.3s;">
+        <!-- 5. Hardware & Systems (Spans 2 cols on sm and lg for balanced presentation) -->
+        <div class="comic-panel p-6 flex flex-col justify-between reveal sm:col-span-2 lg:col-span-2" style="transition-delay: 0.2s;">
           <div>
             <div class="flex items-center gap-3 mb-5 border-b-2 border-black dark:border-gray-700 pb-3">
               <div class="w-9 h-9 border border-black dark:border-gray-700 bg-forest-800 text-white flex items-center justify-center shadow-[2px_2px_0px_#000]">
-                <i class="fa-solid fa-network-wired text-sm"></i>
+                <i class="fa-solid fa-desktop text-sm"></i>
               </div>
               <div>
-                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Systems &amp; Net</h3>
-                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">BSCOE Focus</span>
+                <h3 class="font-comic font-bold text-base text-gray-900 dark:text-white">Hardware &amp; Systems</h3>
+                <span class="text-[10px] font-mono text-forest-700 dark:text-forest-400 font-semibold uppercase">Hands-On Systems Engineering</span>
               </div>
             </div>
 
-            <div class="space-y-4">
-              <!-- Networking -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">TCP/IP &amp; Networking</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Coursework</span>
+            <!-- Skills List Grid for 5 items -->
+            <div class="grid grid-cols-1 sm:grid-cols-2 gap-2.5">
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-computer text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">PC Building</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="72"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Desktop Assembly
+                </span>
               </div>
 
-              <!-- Network Troubleshooting -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Network Diagnostics</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Practical</span>
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-screwdriver-wrench text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Hardware Troubleshooting</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="74"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  POST Diagnostics
+                </span>
               </div>
 
-              <!-- Hardware & Systems -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">Hardware Fundamentals</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">Engineering</span>
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-brands fa-windows text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Windows Installation &amp; Configuration</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="70"></div>
-                </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  OS Setup
+                </span>
               </div>
 
-              <!-- REST Architecture -->
-              <div>
-                <div class="flex justify-between text-xs font-mono mb-1">
-                  <span class="font-bold text-gray-800 dark:text-gray-200">REST &amp; HTTP Concepts</span>
-                  <span class="text-forest-700 dark:text-forest-400 font-bold">API Basics</span>
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-microchip text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">System Maintenance</span>
                 </div>
-                <div class="w-full h-2 bg-gray-200 dark:bg-gray-800 border border-black dark:border-gray-700 overflow-hidden">
-                  <div class="skill-bar-fill" data-width="68"></div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Preventive Upkeep
+                </span>
+              </div>
+
+              <div class="flex items-center justify-between p-2.5 bg-gray-50 dark:bg-manga-dark border border-gray-200 dark:border-gray-800 sm:col-span-2">
+                <div class="flex items-center gap-2.5 min-w-0">
+                  <i class="fa-solid fa-puzzle-piece text-forest-700 dark:text-forest-400 text-sm w-4 text-center flex-shrink-0"></i>
+                  <span class="font-mono text-xs font-bold text-gray-900 dark:text-white truncate">Component Compatibility</span>
                 </div>
+                <span class="text-[10px] font-mono font-semibold px-2 py-0.5 border border-forest-800/30 dark:border-forest-400/30 bg-white dark:bg-manga-panel text-forest-800 dark:text-forest-300 flex-shrink-0">
+                  Form Factor &amp; Specs
+                </span>
               </div>
             </div>
           </div>
 
+          <!-- Bottom Badges / Tags -->
           <div class="mt-6 pt-4 border-t border-gray-200 dark:border-gray-800 flex flex-wrap gap-1.5">
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">TCP/IP</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Subnetting</span>
-            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Diagnostics</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">PC Assembly</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Hardware Diagnostics</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Windows 11 / 10</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Thermal Management</span>
+            <span class="px-2 py-0.5 text-[11px] font-mono border border-black dark:border-gray-700 bg-gray-100 dark:bg-manga-dark">Component Specs</span>
           </div>
         </div>
 
@@ -1395,7 +1409,7 @@
               </h3>
 
               <p class="text-gray-700 dark:text-gray-300 text-sm sm:text-base leading-relaxed mb-5 max-w-2xl">
-                An Android overlay utility built using Kotlin designed to reduce display power consumption and minimize eye strain. Utilizes system-level screen tinting and overlay permissions to dim below native minimum thresholds while keeping device interactions active.
+                An Android overlay utility built using Kotlin designed to reduce display power consumption. Utilizes system-level screen tinting and overlay permissions to dim below native minimum thresholds.
               </p>
 
               <!-- Technical highlights -->
@@ -1604,7 +1618,7 @@
               Student Showcase
             </span>
             <p class="text-xs text-gray-600 dark:text-gray-400 leading-relaxed">
-              This portfolio represents my authentic journey as an BSCOE student at ICCT Colleges. Every project reflects honest hands-on effort and continuous learning.
+              This portfolio represents my authentic journey as an BSCOE student at ICCT Colleges. Every project reflects honest hands-on effort and Progressive learning.
             </p>
           </div>
         </div>
@@ -1704,7 +1718,7 @@
 
         <!-- Academic Motto -->
         <blockquote class="text-center md:text-right max-w-xs font-mono text-xs text-gray-400 italic">
-          "Continuous learning, building Experience, and growing with every commit."
+          "Progressive learning, building Experience, and growing with every commit."
         </blockquote>
       </div>
 
@@ -1747,8 +1761,8 @@
     const htmlEl      = document.documentElement;
     const themeBtn    = document.getElementById('theme-toggle');
 
-    // Default to dark mode or user stored preference
-    const currentTheme = localStorage.getItem('portfolio-theme') || 'dark';
+    // Default to light mode or use the user's stored preference
+    const currentTheme = localStorage.getItem('portfolio-theme') || 'light';
     if (currentTheme === 'dark') {
       htmlEl.classList.add('dark');
     } else {
@@ -1792,11 +1806,11 @@
 
     /* ─── 3. Dynamic Typing Effect (Accurate Undergraduate Focus) ─── */
     const phrases = [
-      'Bachelor of Science in Computer Engineering Student',
-      'Tech Enthusiast with Hands-On Hardware Experience',
-      'Associate Software & Mobile Engineer',
-      'BSCOE Undergraduate at ICCT Colleges',
-      'Building Practical Projects',
+      'Undergraduate Bachelor of Science Student',
+      'Associate Android & Web Developer',
+      'GitHub Project Builder',
+      'PC Building Enthusiast',
+      'Windows Installation & Configuration Enthusiast',
     ];
 
     let pIndex = 0;
@@ -1840,24 +1854,7 @@
 
     revealEls.forEach(el => observer.observe(el));
 
-    /* ─── 5. Skill Bar Animator ─── */
-    const bars = document.querySelectorAll('.skill-bar-fill');
-    const barObserver = new IntersectionObserver((entries) => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          const bar = entry.target;
-          const targetWidth = bar.getAttribute('data-width') || '70';
-          setTimeout(() => {
-            bar.style.width = targetWidth + '%';
-          }, 150);
-          barObserver.unobserve(bar);
-        }
-      });
-    }, { threshold: 0.25 });
-
-    bars.forEach(b => barObserver.observe(b));
-
-    /* ─── 6. GitHub Repos Live Fetcher & Filter ─── */
+    /* ─── 5. GitHub Repos Live Fetcher & Filter ─── */
     (function () {
       const GH_USER    = 'goodthunder02nd';
       const API_URL    = `https://api.github.com/users/${GH_USER}/repos?sort=updated&per_page=100`;
@@ -1973,7 +1970,7 @@
       }
     })();
 
-    /* ─── 7. Contact Form Mailto Handler ─── */
+    /* ─── 6. Contact Form Mailto Handler ─── */
     document.getElementById('footer-year').textContent = new Date().getFullYear();
 
     document.getElementById('contact-form').addEventListener('submit', function (e) {
