@@ -519,6 +519,14 @@
     .avatar-comic-frame:hover {
       box-shadow: 12px 12px 0px 0px #2d6a4f;
     }
+    .avatar-image-window {
+      --avatar-crop-top: 99px;
+    }
+    .avatar-image-window img {
+      position: relative;
+      top: calc(-1 * var(--avatar-crop-top));
+      margin-bottom: calc(-1 * var(--avatar-crop-top));
+    }
 
     /* ── Comic Speech Bubble Callout ── */
     .comic-bubble {
@@ -709,7 +717,7 @@
               </div>
 
               <!-- Avatar Image (Authentic Comic Art Preserved) -->
-              <div class="relative overflow-hidden border-2 border-black dark:border-gray-800 bg-gray-100 dark:bg-black">
+              <div class="avatar-image-window relative overflow-hidden border-2 border-black dark:border-gray-800 bg-gray-100 dark:bg-black">
                 <img
                   src="assets/images/profile/IMG_20261019_171352.jpg"
                   alt="Lawrence Adrian Caliwag comic avatar"
@@ -794,7 +802,7 @@
                   <i class="fa-solid fa-network-wired"></i> Networking
                 </span>
                 <span class="inline-flex items-center gap-1.5 px-3 py-1 text-xs font-mono font-semibold border border-black dark:border-gray-700 bg-forest-50 dark:bg-forest-950/40 text-forest-800 dark:text-forest-300">
-                  <i class="fa-solid fa-microchip"></i> System Architecture
+                  <i class="fa-solid fa-microchip"></i> Hardware & System Architecture
                 </span>
               </div>
             </div>
@@ -1696,7 +1704,7 @@
 
         <!-- Academic Motto -->
         <blockquote class="text-center md:text-right max-w-xs font-mono text-xs text-gray-400 italic">
-          "Continuous learning, building practical software, and growing with every commit."
+          "Continuous learning, building Experience, and growing with every commit."
         </blockquote>
       </div>
 
